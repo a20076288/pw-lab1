@@ -1,0 +1,28 @@
+html {
+    background-color: wheat;
+}
+body {
+    width: 1024px;
+  margin: auto;
+  background-color:coral;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+  }
+
+/*body {
+    width: 1024px;
+    margin: auto;
+    text-align: center;
+    background-color: cadetblue;
+}
+*/
+h3 {
+    color:brown;
+}

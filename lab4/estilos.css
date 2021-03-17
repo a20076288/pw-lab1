@@ -1,0 +1,313 @@
+*{
+  font-family:'Montserrat', sans-serif;
+}
+
+html {
+    background-color: rgb(161, 161, 161);
+}
+
+header {
+  background-color: rgb(236, 191, 131);
+  padding: 20px 20px 20px 20px;
+  margin: 0px 90px 20px 90px;
+  z-index: 2;
+}
+
+body {
+    max-width: 1024px;
+    font-size: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: wheat;
+    
+}
+section {
+  padding: 10px 100px 10px 100px;
+}  
+
+fieldset {
+  display: block;
+  text-align: left;
+}  
+
+.comentarios {
+  display:block;
+  text-align: center;
+}
+
+label {
+  display: block;
+  padding: 35px 0px 0px 0px;
+}  
+
+.quizz {
+  display:flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  text-align: center;
+  
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Merienda', cursive;
+  color:darkslategray;
+  position:relative;
+  z-index: 100;
+}
+  
+h2 {
+  font-size: 2em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:saddlebrown;
+}
+
+h3 {
+  font-size: 1.5em;
+  color:brown;
+}
+
+hr {
+  width: 98%;
+}
+
+a:link {
+  color: darkslategrey; text-decoration:none;
+}
+
+a:visited {
+  color:rgb(180, 38, 38); text-decoration:none;
+}
+
+a:hover {
+  color: red; text-decoration:none; font-size: 140%;
+}
+
+a:active {
+  color: green; text-decoration:none;
+} 
+
+a[target=_blank] {
+  color: purple;
+}
+
+#estrutura {
+  text-align:left;
+  margin: auto;
+}
+
+#importante {
+  text-align: left;
+}
+
+#letra::first-letter {
+  color:blue;
+  font-size: xx-large;
+  font-family:cursive;
+}
+
+#letra::first-line {
+  color:royalblue;
+}
+
+#poema::first-line {
+  color: cornflowerblue;
+  font-family: 'Great Vibes', cursive;
+}
+
+footer {
+  text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.tabela {
+  border-collapse:separate;
+  margin: auto;
+  border-style:ridge;
+  font-size: 0.8em;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabela thead tr {
+  background-color: #775f1e;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tabela th, .tabela td {
+    padding: 12px 15px;
+}
+
+.tabela tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+  background-color: #c7aa7f;
+}
+
+.tabela tbody tr:nth-of-type(odd) {
+  background-color: #e9e0e0;
+}
+
+.tabela tbody tr:last-of-type {
+  border-bottom: 2px solid #494842;
+}
+
+span {
+color:blue;
+background-color: lawngreen;
+}
+
+nav {
+  position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+nav ul {
+  margin: 0px 80px 0px 80px;
+  border-radius: 50px;
+	border: 3px solid #000000;
+  border-style:ridge;
+  background-color: wheat; 
+}
+
+nav li {
+  display:inline;
+  font-size: 75%;
+  margin: auto; 
+}
+#casa::after {
+  content: "Home" ; 
+}
+
+#html::after{
+  content: "HTML5 e CSS |";
+}
+
+#comentarios::after{
+  content: "Comentários |";
+}
+
+#quizz::after{
+  content: "Quizz |";
+}
+
+#info::after{
+  content: "Informações |";
+}
+
+#multimedia::after{
+  content: "Multimédia |";
+}
+
+#local::after{
+  content: "Localização |";
+}
+
+#index::after{
+  content: "Introdução |";
+}
+
+[src="img/edimburgo.jpg"] {
+  border: 10px;
+  border-style: ridge;
+  border-color:saddlebrown;
+}
+
+[src="img/castelo_pequena.jpg"] {
+  border-width:5px; 
+  border-style: double;
+  border-radius: 50%;
+}
+
+[src="img/prince_pequena.jpg"] {
+  border-width:5px;
+  border-style: double;
+}
+
+iframe {
+  border-width:5px;
+  border-style: groove;
+  overflow: auto;
+}
+#teste {
+  width: 1065px;
+  height: 700px;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  left:100px;
+  top:0px;
+}
+ 
+#teste2 {
+  position: relative;
+  z-index: 2;
+  top:-110px;
+}
+
+#teste3 {
+  position:-webkit-sticky;
+  position: sticky;
+  z-index: 4;
+  left:2000px;
+  top:500px;
+  border-radius: 8px;
+  border-style: groove;
+  color:plum;
+  
+}
+
+#block {
+  display:inline-flex;
+  
+}
+
+
+#album img {
+  display:inline-block;
+  max-block-size: 100px;
+  border-style: double;
+  border-radius: 8px;
+  color:red;
+  
+}
+#album {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#album iframe {
+  width: 800px;
+  height: 500px;
+  
+  
+}
+.poem div p {
+  font-style:oblique;
+}
+
+.poem div > p {
+  color: blue;
+}
+
+.poem div ~ p {
+  color:red;
+}
+
+.poem div + p {
+  text-decoration: underline;
+}
+
+div, p {font-style: italic;}
+
+
+

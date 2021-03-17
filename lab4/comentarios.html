@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Merienda:wght@700&family=Montserrat:wght@100;500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="keywords" content="Edimburgo, HTML, Website">
+        <meta name="description" content="Website sobre Edimburgo">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+        <title>Comentários</title>
+    </head>
+    <body>
+        <header>
+            <h1>Edimburgo</h1>
+            <img src="img/edimburgo.jpg" alt="Edimburgo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="index"> <i class="material-icons" style="color: teal;">content_paste</i></a></li>
+                <li><a href="local.html"  id="local"> <i class="material-icons" style="color: teal;">place</i></a></li>
+                <li><a href="multimedia.html" id="multimedia"> <i class="material-icons" style="color: teal;">movie_creation</i></a></li>
+                <li><a href="info.html" id="info"> <i class="material-icons" style="color: teal;">info</i></a></li>
+                <li><a href="quizz.html" id="quizz"> <i class="material-icons" style="color: teal;">quiz</i></a></li>
+                <li><a href="comentarios.html" id="comentarios"> <i class="material-icons" style="color: teal;">speaker_notes</i></a></li>
+                <li><a href="html5-css.html" id="html"> <i class="material-icons" style="color: teal;">ballot</i></a></li>
+                <li><a href="..\index.html" id="casa"> <i class="material-icons" style="color: teal;">home</i></a></li>
+            </ul>
+        </nav>    
+        <main>
+        <section>
+        <hr> 
+            <h3>Comentários</h3>
+            <form action="mailto:a20076288@alunos.ulht.pt" method="post">
+                <fieldset class="comentarios">
+                    <legend><b>Sugestões de melhoria</b></legend>
+
+                    <label for="clareza">Este website é de fácil compreensão?</label>
+                        <input type="range" id="clareza" name="clareza" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+                        <output>50</output>
+
+                    <section class="quizz">
+                        <label for="clareza">Como classificaria o design deste website?</label>
+                            <label for="fraco">
+                                <input type="radio" id="fraco" name="único" value="fraco">Fraco</label>
+                            <label for="Medio">
+                                <input type="radio" id="medio" name="único" value="medio">Médio</label>
+                            <label for="Bom">
+                                <input type="radio" id="bom" name="único" value="bom">Bom</label>
+                            <label for="excelente">
+                                <input type="radio" id="excelente" name="único" value="excelente">Excelente</label>
+                    </section> 
+
+                    <section class="quizz">
+                        <label for="erros">Encontrou algum erro durante a sua "navegação"?</label>
+                            <label for="sim">                        
+                                <input type="radio" id="sim" name="único" value="sim">Sim</label>
+                            <label for="não">
+                                <input type="radio" id="não" name="único" value="não">Não</label>      
+                    </section>
+
+                        <label for="text">Se respondeu "Sim", indique qual</label>
+                            <textarea name="message" rows="01" cols="20">"Indique o(s) erro(s)"</textarea>
+                        <label for="rigor">Como avaliaria (de 1 a 10) a informação presente neste website?</label>
+                            <input type="number" id="rigor" name="rigor" max="10" step="1">
+                    
+                     
+                        <label for="precisão">Como avalia o rigor e a precisão que do que leu neste website?</label>
+                            <label for="péssimo">
+                                <input type="radio" id="péssimo" name="único" value="péssimo">Péssimo</label>
+                            <label for="mau">
+                                <input type="radio" id="mau" name="único" value="mau">Mau</label>
+                            <label for="satisfatório">
+                                <input type="radio" id="satisfatório" name="único" value="satisfatório">Satisfatório</label>
+                            <label for="bom">
+                                <input type="radio" id="bom" name="único" value="bom">Bom</label>
+                            <label for="muito bom">
+                                <input type="radio" id="muito bom" name="único" value="muito bom">Muito Bom</label>
+                        </label>
+                                
+                        
+                             
+                        <label for="profundidade">Sobre que categoria presente neste website gostaria de saber mais?</label>
+                            <select name="categorias" id="categorias">
+                            <option value="Introdução">Introdução</option>
+                            <option value="Localização">Localização</option>
+                            <option value="Multimédia">Multimédia</option>
+                            <option value="Informação">Informação</option>
+                            </select>
+                        
+                        <label for="significância">As informações fornecidas são importantes ou pecam pela trivialidade?</label>
+                            <input type="text" placeholder="Resposta">      
+                            
+                        <label for="originalidade">Quão original e criativo é este website?</label>
+                            <input type="range" id="originalidade" name="originalidade" min="0" max="100" value="0" oninput="this.nextElementSibling.value = this.value">
+                            <output>0</output> %
+                            
+                        <label for="amplitude">O que queria ver e/ou saber que este website não contemplou?</label>
+                            <input type="text" placeholder="Dê a sua opinião">  
+                        
+                        
+                    <label for="sugestões">Deixe aqui as suas sugestões:</label>
+                        
+                        <textarea name="message" rows="3" cols="55"></textarea>
+                        
+                        
+                    <label><input type="hidden" id="lab4" name="lab4" value="100"></label>
+                    <label><input type="submit" value="Submeter" style="height:35px; width:145px;" onclick="alert('Obrigado por nos ajudar a melhorar!')"></label>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+        <hr>
+            <svg width="500" height="300">
+                <g transform="translate(100,100)"> 
+                <a href="index.html">
+                    <text id="index" x="30" y="-90" style="font-family:forte ; stroke:chocolate ; font-size:150%">Introdução
+                        <animateMotion path="M 10 20 L 10 10" begin="1s" dur="5s" fill="freeze"/>
+                            <animateTransform attributeName="transform" type="rotate" from="20" to="5" begin="1s" dur="5s" fill="freeze"/> 
+                    </text> 
+                </a>
+                <a href="local.html">
+                    <text id="local" x="150" y="-130" style="font-family:Elephant ; stroke:green ; font-size:110%">Localização
+                        <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze"/>
+                            <animateTransform attributeName="transform" type="rotate" from="30" to="-5" begin="1s" dur="5s" fill="freeze"/> 
+                    </text> 
+                </a>
+                <a href="multimedia.html">
+                    <text id="multimedia" x="10" y="-120" style="font-family:Stencil ; stroke:rgb(141, 29, 151) ; font-size:100%">Multimédia
+                        <animateMotion path="M 0 0 L 50 100" begin="1s" dur="4s" fill="freeze"/>
+                            <animateTransform attributeName="transform" type="rotate" from="-40" to="2" begin="1s" dur="5s" fill="freeze"/> 
+                    </text> 
+                </a>
+                <a href="info.html">
+                    <text id="info" x="150" y="-110" style="font-family:Monotype Corsiva ; stroke:rgb(210, 30, 30) ; font-size:160%">Informação
+                        <animateMotion path="M 0 0 L 50 100" begin="1s" dur="3s" fill="freeze"/>
+                            <animateTransform attributeName="transform" type="rotate" from="-40" to="4" begin="1s" dur="5s" fill="freeze"/> 
+                    </text> 
+                </a>            
+                <a href="quizz.html">
+                    <text id="quizz" x="50" y="-60" style="font-family:Algerian ; stroke:rgb(192, 210, 30) ; font-size:120%">Quizz
+                        <animateMotion path="M 0 0 L 50 100" begin="1s" dur="4s" fill="freeze"/>
+                            <animateTransform attributeName="transform" type="rotate" from="20" to="-2" begin="1s" dur="5s" fill="freeze"/> 
+                    </text> 
+                </a> 
+                <a href="comentarios.html">
+                    <text id="comentarios" x="130" y="-50" style="font-family:Harrington ; stroke:rgb(29, 37, 109) ;font-size:130%">Comentários
+                        <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze"/>
+                            <animateTransform attributeName="transform" type="rotate" from="-30" to="0" begin="1s" dur="2s" fill="freeze"/> 
+                    </text> 
+                </a> 
+                </g> 
+            </svg>
+        </section>    
+        <a href="index.html">Voltar à Introdução</a>
+        </main>
+        <hr>
+        <footer>
+            <p>Tiago Silva, a20076288, ULHT, 2ºAno</p>
+        </footer>
+    </body>
+</html>
