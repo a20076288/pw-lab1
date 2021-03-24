@@ -1,0 +1,662 @@
+
+
+p {
+  font-size: 1.5w;
+}
+
+body {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 0.2fr  0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  text-align: center;
+  background-color: wheat;
+}
+.grid {
+  background-color: #444;
+  color: rgb(68, 13, 13);
+  padding: 20px;
+  font-size: 2vw;
+}
+.header {
+  grid-column: 1 / 6;
+  grid-row: 1 / 2;  
+  background-color:rgb(214, 97, 55);
+  
+}
+
+@keyframes edimburgo {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+
+}
+
+
+
+[src="img/edimburgo.jpg"] {
+  
+    box-sizing:border-box;
+    border: 1vw;
+    border-style: ridge;
+    border-color:saddlebrown;
+    max-width: 100%;
+  }
+
+nav {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    
+    padding: 10px;
+    background:rgb(64, 196, 64)
+  }
+  nav li a {
+    display: block;
+    color: #000;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+
+.menu1 {
+    grid-column: 1 / 2;
+    grid-row-start: 2 / 3;
+    background:rgb(64, 196, 64);
+    display: block;
+    list-style-type: none;
+}
+
+.menu2 {
+    grid-column: 1 / 2;
+    grid-row-start: 3 / 4;
+    background:rgb(64, 196, 64);
+    display: block;
+    list-style-type: none;
+    padding: 1vw;
+
+}
+
+.menu3 {
+    grid-column: 1 / 2;
+    grid-row-start: 4 / 5;
+    background:rgb(64, 196, 64);
+    display: block;
+    list-style: none;
+}
+
+.menu4 {
+  grid-column: 1 / 2;
+  grid-row-start: 5 / 6;
+  background:rgb(64, 196, 64);
+  display: block;
+  list-style: none;
+}
+
+div {
+  margin: 10px 0 10px 0;
+}
+
+.menu2 ul{
+    list-style-type: none;
+   
+}
+
+
+
+aside {
+    grid-column: 5 / 6;
+    grid-row-start: 2 / 6;
+    background-color: tomato;
+    margin-top: 50px;
+    text-align: center;
+    padding: 1vw;
+
+
+}
+
+
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  max-height: 100px;
+  background-color: #99c435;
+}
+
+main {
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+  
+  background-color:rgb(157, 211, 150);
+  padding: 5px;
+  max-width: 100%;
+}
+
+main * {
+  max-width: 100%;
+}
+
+.estrutura {
+  grid-column: 2 / 6;
+  grid-row: 4 / 5;
+  background:rgb(205, 127, 63);
+  text-align: left;
+  font-size: 1.5vw;
+  padding: 30px;
+  text-decoration: none;
+}
+.estrutura li {
+  color: blue;
+}
+
+
+.galeria  {
+  grid-column: 1 / 6;
+  grid-row: 4 / 5;
+  display: flexbox;
+  flex-direction:row;
+  max-width: 100%;
+   
+}
+
+.galeria img {
+  padding: 1vw;
+  border-radius: 30px;
+  
+}
+
+#img1:hover{
+  transform: scaleX(-1);
+}
+
+#img2:hover {
+  opacity: 0.5;
+}
+
+#img3:hover {
+  width: 350px;
+}
+
+#img4:hover {
+  filter: grayscale();
+}
+
+#img11:hover {
+  filter:sepia();
+}
+
+#img22:hover {
+  filter:invert();
+}
+
+#img33:hover {
+  filter: blur(2px);
+}
+
+#img44:hover {
+  transform: translate(30px, 20px) rotate(20deg);
+}
+
+#img111:hover {
+  transform: translate(30px, 20px) rotate(180deg);
+}
+
+#img222:hover {
+  transform: scaleY(0.5);
+}
+
+#img333:hover {
+  transform: skewX(20deg);
+}
+
+#img444:hover {
+  transition-duration: 1s;
+  transition-property: transform;
+  transform: rotate(360deg);
+    
+}
+
+
+
+.animação {
+  grid-column: 2 / 5;
+  grid-row: 6 / 7;
+  background-color: #e6e6e6;
+  font-size: 1vw;
+}
+
+.animação svg {
+  max-width: 100% ;
+}
+
+.desenho {
+  grid-column: 1 / 6;
+  grid-row: 5 / 6;
+  background-color: #fcb7b7;
+  font-size: 1vw;
+  
+}
+
+.desenho img {
+  max-width: 100%;
+}
+
+
+.wordcloud {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  margin:150px 0 0 0;
+  ;
+  
+ 
+}
+
+.svg {
+  grid-column: 2 / 5;
+  grid-row: 5 / 6;
+  background-color:rgb(243, 243, 38);
+  max-width: 100%;
+}
+
+.svg2 {
+  grid-column: 2 / 5;
+  grid-row: 7 / 8;
+  background-color:rgb(243, 243, 38);
+  max-width: 100%;
+  
+}
+
+.footer {
+  grid-column: 1 / 6;
+  grid-row: 8 / 9;
+  background-color: #FFA500;
+}  
+
+iframe {
+  max-width: 100% ;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+ main {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+ 
+  .estrutura{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  aside {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+  
+  .wordcloud{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+    
+  .svg{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 13;
+    grid-row-end: 14;
+  }
+  
+  .sidebar{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 12;
+    grid-row-end: 13;
+  }
+  
+  .desenho {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+
+ .galeria {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 7;
+
+ }
+
+  .svg2 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 20;
+    grid-row-end: 21;
+  }
+
+  .animação {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+
+  }  
+  .footer{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 22;
+    grid-row-end: 23;
+  }
+}    
+
+
+
+#casa::after {
+  content: "Home" ; 
+}
+
+#html::after{
+  content: "HTML5 e CSS";
+}
+
+#comentarios::after{
+  content: "Comentários";
+}
+
+#quizz::after{
+  content: "Quizz";
+}
+
+#info::after{
+  content: "Informações";
+}
+
+#multimedia::after{
+  content: "Multimédia";
+}
+
+#local::after{
+  content: "Localização";
+}
+
+#index::after{
+  content: "Introdução";
+}
+
+
+section {
+  margin:20px;
+}
+
+
+fieldset {
+  display: block;
+  text-align: left;
+  max-width: 100%;
+}  
+
+.comentarios {
+  display:block;
+  text-align: center;
+  max-width: 100%;  
+}
+
+.format {
+  max-width: 100%;  
+}
+
+
+.quizz {
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  
+}
+
+
+label {
+  display: block;
+  padding: 35px 0px 0px 0px;
+}  
+
+
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Merienda', cursive;
+  color:darkslategray;
+ 
+  
+}
+  
+h2 {
+  font-size: 2em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:saddlebrown;
+}
+
+h3 {
+  font-size: 1.5em;
+  color:brown;
+}
+
+
+
+a:link {
+  color: darkslategrey; text-decoration:none;
+}
+
+a:visited {
+  color:rgb(180, 38, 38); text-decoration:none;
+}
+
+a:hover {
+  color: red; text-decoration:none; font-size: 140%;
+}
+
+a:active {
+  color: green; text-decoration:none;
+} 
+
+a[target=_blank] {
+  color: purple;
+}
+
+#estrutura {
+  text-align:left;
+  margin: auto;
+}
+
+#importante {
+  text-align: left;
+}
+
+#letra::first-letter {
+  color:blue;
+  font-size: xx-large;
+  font-family:cursive;
+}
+
+#letra::first-line {
+  color:royalblue;
+}
+
+#poema::first-line {
+  color: cornflowerblue;
+  font-family: 'Great Vibes', cursive;
+}
+
+footer {
+  text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+
+.tabela {
+  border-collapse:separate;
+  margin: auto;
+  border-style:ridge;
+  font-size: 0.8em;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabela thead tr {
+  background-color: #775f1e;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tabela th, .tabela td {
+    padding: 12px 15px;
+}
+
+.tabela tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+  background-color: #c7aa7f;
+}
+
+.tabela tbody tr:nth-of-type(odd) {
+  background-color: #e9e0e0;
+}
+
+.tabela tbody tr:last-of-type {
+  border-bottom: 2px solid #494842;
+}
+
+span {
+color:blue;
+background-color: lawngreen;
+}
+
+
+
+
+[src="img/castelo_pequena.jpg"] {
+  border-width:5px; 
+  border-style: double;
+  border-radius: 50%;
+}
+
+[src="img/prince_pequena.jpg"] {
+  border-width:5px;
+  border-style: double;
+}
+
+iframe {
+  border-width:5px;
+  border-style: groove;
+  overflow: auto;
+}
+#teste {
+  width: 1065px;
+  height: 700px;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  left:100px;
+  top:0px;
+}
+ 
+#teste2 {
+  position: relative;
+  z-index: 2;
+  top:-110px;
+}
+
+#teste3 {
+  position:-webkit-sticky;
+  position: sticky;
+  z-index: 4;
+  left:2000px;
+  top:500px;
+  border-radius: 8px;
+  border-style: groove;
+  color:plum;
+  
+}
+
+#block {
+  display:inline-flex;
+  
+}
+
+
+#album img {
+  display:inline-block;
+  max-block-size: 100px;
+  border-style: double;
+  border-radius: 8px;
+  color:red;
+  
+}
+#album {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#album iframe {
+  width: 600px;
+  height: 500px;
+  
+  
+}
+.poem div p {
+  font-style:oblique;
+}
+
+.poem div > p {
+  color: blue;
+}
+
+.poem div ~ p {
+  color:red;
+}
+
+.poem div + p {
+  text-decoration: underline;
+}
+
+
+
+
+
