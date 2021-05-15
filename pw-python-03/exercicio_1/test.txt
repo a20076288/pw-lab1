@@ -1,0 +1,4 @@
+calcula_linhas que recebe o nome do ficheiro e retorna o número de linhas do ficheiro
+calcula_carateres que recebe o nome do ficheiro e retorna o número de carateres do ficheiro
+calcula_palavra_comprida que retorna a palavra mais comprida do ficheiro.
+calcula_ocorrencia_de_letras que recebe o nome do ficheiro e cria um dicionário de todas as letras do ficheiro, indicando a quantidade de vezes que cada letra ocorre. Deverá desprezar se é maiúscula ou minúscula.
