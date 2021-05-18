@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+    <title>Title</title>
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Titulo website</h1>
+         <p>teste paragráfo</p>
+         <nav>
+             <a href="{% url 'website:home' %}" class="btn btn-info">Home</a>
+             <a href="{% url 'website:multimedia' %}" class="btn btn-info">Multimedia</a>
+             <a href="{% url 'website:about' %}" class="btn btn-info">About</a>
+        </nav>
+    </header>
+    <article class="container">
+        <main class="col-sm-6">
+	{% block main %}
+	{% endblock main %}
+        </main>
+        <aside class="col-sm-6">
+            {% load static %}
+            <img src="{% static 'website/images/arisca.jpg' %}">
+        </aside>
+    </article>
+    <footer>Escrever footer</footer>
+</body>
+
+</html>
